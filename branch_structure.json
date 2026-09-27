@@ -1,0 +1,24 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "a11y/checkout-aria-invalid",
+    "fix/691-rpc-endpoint-single-source",
+    "fix/issue-691-docs-mainnet-reconcile-the-mainnet-rpc-endpoint",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "a11y/checkout-aria-invalid": "main",
+    "fix/691-rpc-endpoint-single-source": "main",
+    "fix/issue-691-docs-mainnet-reconcile-the-mainnet-rpc-endpoint": "main",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "a11y/checkout-aria-invalid",
+    "fix/691-rpc-endpoint-single-source",
+    "fix/issue-691-docs-mainnet-reconcile-the-mainnet-rpc-endpoint",
+    "origin"
+  ]
+}
