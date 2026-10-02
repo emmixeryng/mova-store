@@ -1,7 +1,7 @@
 {
   "name": "mova-store",
   "version": "1.0.0",
-  "description": "Mova Store — e-commerce with Stellar blockchain payments",
+  "description": "Mova Store \u2014 e-commerce with Stellar blockchain payments",
   "private": false,
   "license": "MIT",
   "repository": {
@@ -18,9 +18,9 @@
     "web3"
   ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "bundle:report": "node scripts/bundle-report.mjs",
     "bundle:check": "node scripts/bundle-report.mjs --strict",
     "lint": "next lint --dir app --dir components --dir lib --dir hooks --dir context --dir tests --dir __tests__",
@@ -34,6 +34,7 @@
     "test:ui": "vitest --ui",
     "verify": "npm run lint && npm run type-check && npm run test:coverage && npm run build && npm run format:check",
     "test:naming": "node scripts/check-test-names.mjs",
+    "triage": "node scripts/triage-prs.mjs",
     "deploy:testnet": "./scripts/deploy-testnet.sh",
     "prepare": "node scripts/setup-git-hooks.mjs"
   },
